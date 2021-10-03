@@ -26,8 +26,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            rfpereira/conversaopeso:latest
-            rfpereira/conversaopeso:${{ github.run_number }} 
+            lucasriboli/conversao-peso:latest
+            lucasriboli/conversao-peso:${{ github.run_number }} 
   CD:
       needs: [CI]
       runs-on: ubuntu-latest
